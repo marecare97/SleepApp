@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+typealias COL = Asset.Colors
+
 @main
 struct SleepAppApp: App {
     var body: some Scene {

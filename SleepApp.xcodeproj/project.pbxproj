@@ -14,6 +14,12 @@
 		F62E86342C2C3EAC0033757E /* SleepAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E86332C2C3EAC0033757E /* SleepAppTests.swift */; };
 		F62E863E2C2C3EAC0033757E /* SleepAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E863D2C2C3EAC0033757E /* SleepAppUITests.swift */; };
 		F62E86402C2C3EAC0033757E /* SleepAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E863F2C2C3EAC0033757E /* SleepAppUITestsLaunchTests.swift */; };
+		F62E86502C2C47F40033757E /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = F62E864F2C2C47F40033757E /* swiftgen.yml */; };
+		F62E86612C2C4A0E0033757E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62E86602C2C4A0E0033757E /* Colors.xcassets */; };
+		F62E86632C2C4A1E0033757E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62E86622C2C4A1E0033757E /* Images.xcassets */; };
+		F62E86672C2C4A410033757E /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E86642C2C4A410033757E /* Assets.swift */; };
+		F62E86682C2C4A410033757E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E86652C2C4A410033757E /* Strings.swift */; };
+		F62E866B2C2C4B350033757E /* en.strings in Resources */ = {isa = PBXBuildFile; fileRef = F62E86692C2C4B350033757E /* en.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		F62E86392C2C3EAC0033757E /* SleepAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62E863D2C2C3EAC0033757E /* SleepAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepAppUITests.swift; sourceTree = "<group>"; };
 		F62E863F2C2C3EAC0033757E /* SleepAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F62E864F2C2C47F40033757E /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		F62E86602C2C4A0E0033757E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		F62E86622C2C4A1E0033757E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F62E86642C2C4A410033757E /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		F62E86652C2C4A410033757E /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		F62E866A2C2C4B350033757E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/en.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,7 @@
 		F62E86162C2C3EAB0033757E = {
 			isa = PBXGroup;
 			children = (
+				F62E864F2C2C47F40033757E /* swiftgen.yml */,
 				F62E86212C2C3EAB0033757E /* SleepApp */,
 				F62E86322C2C3EAC0033757E /* SleepAppTests */,
 				F62E863C2C2C3EAC0033757E /* SleepAppUITests */,
@@ -94,6 +107,7 @@
 		F62E86212C2C3EAB0033757E /* SleepApp */ = {
 			isa = PBXGroup;
 			children = (
+				F62E86512C2C48000033757E /* UILayer */,
 				F62E86222C2C3EAB0033757E /* SleepAppApp.swift */,
 				F62E86242C2C3EAB0033757E /* ContentView.swift */,
 				F62E86262C2C3EAC0033757E /* Assets.xcassets */,
@@ -127,6 +141,34 @@
 			path = SleepAppUITests;
 			sourceTree = "<group>";
 		};
+		F62E86512C2C48000033757E /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				F62E86522C2C48110033757E /* Resources */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		F62E86522C2C48110033757E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F62E86662C2C4A410033757E /* Generated */,
+				F62E86602C2C4A0E0033757E /* Colors.xcassets */,
+				F62E86622C2C4A1E0033757E /* Images.xcassets */,
+				F62E86692C2C4B350033757E /* en.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F62E86662C2C4A410033757E /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				F62E86642C2C4A410033757E /* Assets.swift */,
+				F62E86652C2C4A410033757E /* Strings.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +185,8 @@
 			dependencies = (
 			);
 			name = SleepApp;
+			packageProductDependencies = (
+			);
 			productName = SleepApp;
 			productReference = F62E861F2C2C3EAB0033757E /* SleepApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +259,8 @@
 				Base,
 			);
 			mainGroup = F62E86162C2C3EAB0033757E;
+			packageReferences = (
+			);
 			productRefGroup = F62E86202C2C3EAB0033757E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,8 +277,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F62E86612C2C4A0E0033757E /* Colors.xcassets in Resources */,
 				F62E862A2C2C3EAC0033757E /* Preview Assets.xcassets in Resources */,
+				F62E86632C2C4A1E0033757E /* Images.xcassets in Resources */,
+				F62E866B2C2C4B350033757E /* en.strings in Resources */,
 				F62E86272C2C3EAC0033757E /* Assets.xcassets in Resources */,
+				F62E86502C2C47F40033757E /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +309,8 @@
 			files = (
 				F62E86252C2C3EAB0033757E /* ContentView.swift in Sources */,
 				F62E86232C2C3EAB0033757E /* SleepAppApp.swift in Sources */,
+				F62E86682C2C4A410033757E /* Strings.swift in Sources */,
+				F62E86672C2C4A410033757E /* Assets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +345,17 @@
 			targetProxy = F62E863A2C2C3EAC0033757E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F62E86692C2C4B350033757E /* en.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F62E866A2C2C4B350033757E /* en */,
+			);
+			name = en.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F62E86412C2C3EAC0033757E /* Debug */ = {
@@ -428,8 +491,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,9 +501,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = markos.SleepApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -457,8 +525,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,9 +535,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = markos.SleepApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
