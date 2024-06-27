@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F62E86232C2C3EAB0033757E /* SleepAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E86222C2C3EAB0033757E /* SleepAppApp.swift */; };
-		F62E86252C2C3EAB0033757E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E86242C2C3EAB0033757E /* ContentView.swift */; };
+		F62E86252C2C3EAB0033757E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E86242C2C3EAB0033757E /* HomeView.swift */; };
 		F62E86272C2C3EAC0033757E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62E86262C2C3EAC0033757E /* Assets.xcassets */; };
 		F62E862A2C2C3EAC0033757E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62E86292C2C3EAC0033757E /* Preview Assets.xcassets */; };
 		F62E86342C2C3EAC0033757E /* SleepAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E86332C2C3EAC0033757E /* SleepAppTests.swift */; };
@@ -19,7 +19,17 @@
 		F62E86632C2C4A1E0033757E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62E86622C2C4A1E0033757E /* Images.xcassets */; };
 		F62E86672C2C4A410033757E /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E86642C2C4A410033757E /* Assets.swift */; };
 		F62E86682C2C4A410033757E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E86652C2C4A410033757E /* Strings.swift */; };
-		F62E866B2C2C4B350033757E /* en.strings in Resources */ = {isa = PBXBuildFile; fileRef = F62E86692C2C4B350033757E /* en.strings */; };
+		F62E866E2C2D527F0033757E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E866D2C2D527F0033757E /* HomeViewModel.swift */; };
+		F62E86722C2D53F30033757E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F62E86712C2D53F30033757E /* FirebaseAuth */; };
+		F62E86742C2D54F60033757E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E86732C2D54F60033757E /* AppDelegate.swift */; };
+		F62E86772C2D56A10033757E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E86762C2D56A10033757E /* LoginView.swift */; };
+		F62E867B2C2D56BF0033757E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E867A2C2D56BF0033757E /* LoginViewModel.swift */; };
+		F62E86812C2D5B700033757E /* en.strings in Resources */ = {isa = PBXBuildFile; fileRef = F62E86802C2D5B700033757E /* en.strings */; };
+		F62E86842C2D5E700033757E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F62E86832C2D5E700033757E /* GoogleService-Info.plist */; };
+		F62E86872C2D607B0033757E /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = F62E86862C2D607B0033757E /* SFSafeSymbols */; };
+		F62E868B2C2D950B0033757E /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E868A2C2D950B0033757E /* PrimaryTextField.swift */; };
+		F62E868E2C2D9E950033757E /* View+TextFieldDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E868D2C2D9E950033757E /* View+TextFieldDismiss.swift */; };
+		F62E86902C2DA27A0033757E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E868F2C2DA27A0033757E /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +52,7 @@
 /* Begin PBXFileReference section */
 		F62E861F2C2C3EAB0033757E /* SleepApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62E86222C2C3EAB0033757E /* SleepAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepAppApp.swift; sourceTree = "<group>"; };
-		F62E86242C2C3EAB0033757E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F62E86242C2C3EAB0033757E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F62E86262C2C3EAC0033757E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F62E86292C2C3EAC0033757E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F62E862F2C2C3EAC0033757E /* SleepAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,7 +65,15 @@
 		F62E86622C2C4A1E0033757E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F62E86642C2C4A410033757E /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		F62E86652C2C4A410033757E /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
-		F62E866A2C2C4B350033757E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/en.strings; sourceTree = "<group>"; };
+		F62E866D2C2D527F0033757E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F62E86732C2D54F60033757E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F62E86762C2D56A10033757E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F62E867A2C2D56BF0033757E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F62E86802C2D5B700033757E /* en.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = en.strings; sourceTree = "<group>"; };
+		F62E86832C2D5E700033757E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F62E868A2C2D950B0033757E /* PrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
+		F62E868D2C2D9E950033757E /* View+TextFieldDismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+TextFieldDismiss.swift"; sourceTree = "<group>"; };
+		F62E868F2C2DA27A0033757E /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F62E86872C2D607B0033757E /* SFSafeSymbols in Frameworks */,
+				F62E86722C2D53F30033757E /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +106,7 @@
 		F62E86162C2C3EAB0033757E = {
 			isa = PBXGroup;
 			children = (
+				F62E86832C2D5E700033757E /* GoogleService-Info.plist */,
 				F62E864F2C2C47F40033757E /* swiftgen.yml */,
 				F62E86212C2C3EAB0033757E /* SleepApp */,
 				F62E86322C2C3EAC0033757E /* SleepAppTests */,
@@ -107,9 +128,10 @@
 		F62E86212C2C3EAB0033757E /* SleepApp */ = {
 			isa = PBXGroup;
 			children = (
+				F62E867C2C2D56F40033757E /* DomainLayer */,
 				F62E86512C2C48000033757E /* UILayer */,
 				F62E86222C2C3EAB0033757E /* SleepAppApp.swift */,
-				F62E86242C2C3EAB0033757E /* ContentView.swift */,
+				F62E86732C2D54F60033757E /* AppDelegate.swift */,
 				F62E86262C2C3EAC0033757E /* Assets.xcassets */,
 				F62E86282C2C3EAC0033757E /* Preview Content */,
 			);
@@ -144,6 +166,10 @@
 		F62E86512C2C48000033757E /* UILayer */ = {
 			isa = PBXGroup;
 			children = (
+				F62E866F2C2D53650033757E /* Auth */,
+				F62E866C2C2D52720033757E /* Home */,
+				F62E86822C2D5B9F0033757E /* Components */,
+				F62E868C2C2D9E800033757E /* Helpers */,
 				F62E86522C2C48110033757E /* Resources */,
 			);
 			path = UILayer;
@@ -155,7 +181,7 @@
 				F62E86662C2C4A410033757E /* Generated */,
 				F62E86602C2C4A0E0033757E /* Colors.xcassets */,
 				F62E86622C2C4A1E0033757E /* Images.xcassets */,
-				F62E86692C2C4B350033757E /* en.strings */,
+				F62E86802C2D5B700033757E /* en.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -167,6 +193,80 @@
 				F62E86652C2C4A410033757E /* Strings.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		F62E866C2C2D52720033757E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F62E86242C2C3EAB0033757E /* HomeView.swift */,
+				F62E866D2C2D527F0033757E /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F62E866F2C2D53650033757E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F62E86752C2D568D0033757E /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F62E86752C2D568D0033757E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F62E86762C2D56A10033757E /* LoginView.swift */,
+				F62E867A2C2D56BF0033757E /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F62E867C2C2D56F40033757E /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F62E867D2C2D57080033757E /* Entities */,
+				F62E867E2C2D57240033757E /* Providers */,
+				F62E867F2C2D572C0033757E /* UseCases */,
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		F62E867D2C2D57080033757E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F62E867E2C2D57240033757E /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		F62E867F2C2D572C0033757E /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		F62E86822C2D5B9F0033757E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F62E868A2C2D950B0033757E /* PrimaryTextField.swift */,
+				F62E868F2C2DA27A0033757E /* CustomButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F62E868C2C2D9E800033757E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F62E868D2C2D9E950033757E /* View+TextFieldDismiss.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +286,8 @@
 			);
 			name = SleepApp;
 			packageProductDependencies = (
+				F62E86712C2D53F30033757E /* FirebaseAuth */,
+				F62E86862C2D607B0033757E /* SFSafeSymbols */,
 			);
 			productName = SleepApp;
 			productReference = F62E861F2C2C3EAB0033757E /* SleepApp.app */;
@@ -260,6 +362,8 @@
 			);
 			mainGroup = F62E86162C2C3EAB0033757E;
 			packageReferences = (
+				F62E86702C2D53F30033757E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F62E86852C2D607A0033757E /* XCRemoteSwiftPackageReference "SFSafeSymbols" */,
 			);
 			productRefGroup = F62E86202C2C3EAB0033757E /* Products */;
 			projectDirPath = "";
@@ -277,10 +381,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F62E86842C2D5E700033757E /* GoogleService-Info.plist in Resources */,
 				F62E86612C2C4A0E0033757E /* Colors.xcassets in Resources */,
 				F62E862A2C2C3EAC0033757E /* Preview Assets.xcassets in Resources */,
 				F62E86632C2C4A1E0033757E /* Images.xcassets in Resources */,
-				F62E866B2C2C4B350033757E /* en.strings in Resources */,
+				F62E86812C2D5B700033757E /* en.strings in Resources */,
 				F62E86272C2C3EAC0033757E /* Assets.xcassets in Resources */,
 				F62E86502C2C47F40033757E /* swiftgen.yml in Resources */,
 			);
@@ -307,10 +412,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F62E86252C2C3EAB0033757E /* ContentView.swift in Sources */,
+				F62E86742C2D54F60033757E /* AppDelegate.swift in Sources */,
+				F62E868B2C2D950B0033757E /* PrimaryTextField.swift in Sources */,
+				F62E86772C2D56A10033757E /* LoginView.swift in Sources */,
+				F62E86252C2C3EAB0033757E /* HomeView.swift in Sources */,
 				F62E86232C2C3EAB0033757E /* SleepAppApp.swift in Sources */,
+				F62E867B2C2D56BF0033757E /* LoginViewModel.swift in Sources */,
 				F62E86682C2C4A410033757E /* Strings.swift in Sources */,
+				F62E86902C2DA27A0033757E /* CustomButton.swift in Sources */,
+				F62E866E2C2D527F0033757E /* HomeViewModel.swift in Sources */,
 				F62E86672C2C4A410033757E /* Assets.swift in Sources */,
+				F62E868E2C2D9E950033757E /* View+TextFieldDismiss.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,17 +457,6 @@
 			targetProxy = F62E863A2C2C3EAC0033757E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F62E86692C2C4B350033757E /* en.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F62E866A2C2C4B350033757E /* en */,
-			);
-			name = en.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F62E86412C2C3EAC0033757E /* Debug */ = {
@@ -499,6 +600,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = markos.SleepApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -533,6 +635,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = markos.SleepApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -661,6 +764,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F62E86702C2D53F30033757E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.28.1;
+			};
+		};
+		F62E86852C2D607A0033757E /* XCRemoteSwiftPackageReference "SFSafeSymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SFSafeSymbols/SFSafeSymbols.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F62E86712C2D53F30033757E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F62E86702C2D53F30033757E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F62E86862C2D607B0033757E /* SFSafeSymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F62E86852C2D607A0033757E /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
+			productName = SFSafeSymbols;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F62E86172C2C3EAB0033757E /* Project object */;
 }

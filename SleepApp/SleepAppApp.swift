@@ -7,13 +7,16 @@
 
 import SwiftUI
 
-typealias COL = Asset.Colors
+typealias Col = Asset.Colors
+typealias Img = Asset.Images
 
 @main
 struct SleepAppApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }

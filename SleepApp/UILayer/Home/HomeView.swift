@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     var body: some View {
         VStack {
             Text("sleep")
                 .textCase(.uppercase)
-                .foregroundStyle(COL.themeColor.swiftUIColor)
+                .foregroundStyle(Col.themeColor.swiftUIColor)
         }
         .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    HomeView()
 }
