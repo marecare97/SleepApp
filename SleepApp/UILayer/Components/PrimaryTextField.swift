@@ -18,23 +18,35 @@ struct PrimaryTextField: View {
     @State var placeholderText = ""
     @Binding var textFieldText: String
     var textFieldStyle: TextFieldStyle
+    @State var errorMessage = ""
     
     var body: some View {
-        HStack {
+        VStack {
+            HStack {
+                
+                Image(systemSymbol: symbolType(for: textFieldStyle))
+                
+                if textFieldStyle == .passwordField {
+                    SecureField(placeholderText, text: $textFieldText)
+                } else {
+                    TextField(placeholderText, text: $textFieldText)
+                        .keyboardType(keyboardType(for: textFieldStyle))
+                }
+            }
+            .padding(EdgeInsets(top: 0, leading: 6, bottom: 0, trailing: 6))
+            .frame(minWidth: 0, maxWidth: .infinity)
+            .frame(height: 55)
+            .border(Col.secondaryColor.swiftUIColor, width: 1)
             
-            Image(systemSymbol: symbolType(for: textFieldStyle))
-            
-            if textFieldStyle == .passwordField {
-                SecureField(placeholderText, text: $textFieldText)
-            } else {
-                TextField(placeholderText, text: $textFieldText)
-                    .keyboardType(keyboardType(for: textFieldStyle))
+            HStack {
+                Text(errorMessage)
+                    .padding(.vertical, 5)
+                    .fontWeight(.bold)
+                    .foregroundStyle(.red)
+                
+                Spacer()
             }
         }
-        .padding(EdgeInsets(top: 0, leading: 6, bottom: 0, trailing: 6))
-        .frame(minWidth: 0, maxWidth: .infinity)
-        .frame(height: 55)
-        .border(Col.secondaryColor.swiftUIColor, width: 1)
     }
     
     private func symbolType(for style: TextFieldStyle) -> SFSymbol {

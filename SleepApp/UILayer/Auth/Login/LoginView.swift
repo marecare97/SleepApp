@@ -27,19 +27,24 @@ struct LoginView: View {
             PrimaryTextField(
                 placeholderText: LoginViewStr.email,
                 textFieldText: $viewModel.email,
-                textFieldStyle: .emailField
+                textFieldStyle: .emailField,
+                errorMessage: viewModel.emailErrorMessage
             )
             
             PrimaryTextField(
                 placeholderText: LoginViewStr.password,
                 textFieldText: $viewModel.password,
-                textFieldStyle: .passwordField
+                textFieldStyle: .passwordField,
+                errorMessage: viewModel.passwordErrorMessage
             )
-            .padding(.vertical)
             
             CustomButton(
                 buttonTitle: LoginViewStr.login,
-                buttonAction: {},
+                buttonAction: {
+                    Task {
+                        await viewModel.login()
+                    }
+                },
                 buttonForegroundColor: .white,
                 buttonBackgroundColor: Col.themeColor.swiftUIColor
             )
@@ -50,7 +55,7 @@ struct LoginView: View {
                     .foregroundStyle(.blue)
                     .fontWeight(.bold)
                     .onTapGesture {
-                        print("go to register")
+                        print("goes to register")
                     }
             }
             .padding(.vertical)

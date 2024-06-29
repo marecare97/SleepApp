@@ -23,6 +23,7 @@ struct CustomButton: View {
         .foregroundStyle(buttonForegroundColor)
         .background(buttonBackgroundColor)
         .border(.gray, width: 1)
+        .clipShape(RoundedRectangle(cornerSize: CGSize(width: 30, height: 10)))
     }
 }
 

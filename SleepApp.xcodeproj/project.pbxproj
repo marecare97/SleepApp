@@ -30,6 +30,9 @@
 		F62E868B2C2D950B0033757E /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E868A2C2D950B0033757E /* PrimaryTextField.swift */; };
 		F62E868E2C2D9E950033757E /* View+TextFieldDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E868D2C2D9E950033757E /* View+TextFieldDismiss.swift */; };
 		F62E86902C2DA27A0033757E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E868F2C2DA27A0033757E /* CustomButton.swift */; };
+		F62E86932C301BB80033757E /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E86922C301BB80033757E /* Email.swift */; };
+		F62E86952C301BD20033757E /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E86942C301BD20033757E /* Password.swift */; };
+		F62E86972C301EA80033757E /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E86962C301EA80033757E /* LoginUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,9 @@
 		F62E868A2C2D950B0033757E /* PrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
 		F62E868D2C2D9E950033757E /* View+TextFieldDismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+TextFieldDismiss.swift"; sourceTree = "<group>"; };
 		F62E868F2C2DA27A0033757E /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		F62E86922C301BB80033757E /* Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
+		F62E86942C301BD20033757E /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
+		F62E86962C301EA80033757E /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +240,7 @@
 		F62E867D2C2D57080033757E /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				F62E86912C301B9C0033757E /* AuthEntities */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -248,6 +255,7 @@
 		F62E867F2C2D572C0033757E /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				F62E86962C301EA80033757E /* LoginUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -267,6 +275,15 @@
 				F62E868D2C2D9E950033757E /* View+TextFieldDismiss.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F62E86912C301B9C0033757E /* AuthEntities */ = {
+			isa = PBXGroup;
+			children = (
+				F62E86922C301BB80033757E /* Email.swift */,
+				F62E86942C301BD20033757E /* Password.swift */,
+			);
+			path = AuthEntities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,6 +431,8 @@
 			files = (
 				F62E86742C2D54F60033757E /* AppDelegate.swift in Sources */,
 				F62E868B2C2D950B0033757E /* PrimaryTextField.swift in Sources */,
+				F62E86932C301BB80033757E /* Email.swift in Sources */,
+				F62E86952C301BD20033757E /* Password.swift in Sources */,
 				F62E86772C2D56A10033757E /* LoginView.swift in Sources */,
 				F62E86252C2C3EAB0033757E /* HomeView.swift in Sources */,
 				F62E86232C2C3EAB0033757E /* SleepAppApp.swift in Sources */,
@@ -421,6 +440,7 @@
 				F62E86682C2C4A410033757E /* Strings.swift in Sources */,
 				F62E86902C2DA27A0033757E /* CustomButton.swift in Sources */,
 				F62E866E2C2D527F0033757E /* HomeViewModel.swift in Sources */,
+				F62E86972C301EA80033757E /* LoginUseCase.swift in Sources */,
 				F62E86672C2C4A410033757E /* Assets.swift in Sources */,
 				F62E868E2C2D9E950033757E /* View+TextFieldDismiss.swift in Sources */,
 			);
