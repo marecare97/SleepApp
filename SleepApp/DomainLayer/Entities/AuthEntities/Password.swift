@@ -11,7 +11,8 @@ struct Password {
     let rawValue: String
     
     init?(_ rawValue: String) {
-        guard rawValue.count > 7 else {
+        guard rawValue.isValidPassword else {
+            print(rawValue.passwordValidationError)
             return nil
         }
         

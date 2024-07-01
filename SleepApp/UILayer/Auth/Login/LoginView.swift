@@ -14,10 +14,15 @@ struct LoginView: View {
     @StateObject var viewModel = LoginViewModel()
     
     var body: some View {
-        loginFormComponents
+        loginForm
+            .overlay {
+                if viewModel.authenticationState == .authenticating {
+                    ProgressView()
+                }
+            }
     }
     
-    var loginFormComponents: some View {
+    var loginForm: some View {
         VStack {
             Text(LoginViewStr.login)
                 .font(.largeTitle)
@@ -28,15 +33,16 @@ struct LoginView: View {
                 placeholderText: LoginViewStr.email,
                 textFieldText: $viewModel.email,
                 textFieldStyle: .emailField,
-                errorMessage: viewModel.emailErrorMessage
+                errorMessage: $viewModel.emailErrorMessage
             )
             
             PrimaryTextField(
                 placeholderText: LoginViewStr.password,
                 textFieldText: $viewModel.password,
                 textFieldStyle: .passwordField,
-                errorMessage: viewModel.passwordErrorMessage
+                errorMessage: $viewModel.errorMessage
             )
+            .padding(.vertical)
             
             CustomButton(
                 buttonTitle: LoginViewStr.login,

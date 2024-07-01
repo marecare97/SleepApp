@@ -15,8 +15,15 @@ struct CustomButton: View {
     var buttonBackgroundColor: Color
     
     var body: some View {
-        Button(buttonTitle) {
-            buttonAction()
+        Button(action: buttonAction) {
+            HStack {
+                Spacer()
+                
+                Text(buttonTitle)
+                
+                Spacer()
+            }
+            .contentShape(Rectangle())
         }
         .frame(minWidth: 0, maxWidth: .infinity)
         .frame(height: 50)

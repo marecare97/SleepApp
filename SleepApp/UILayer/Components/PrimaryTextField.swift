@@ -18,7 +18,7 @@ struct PrimaryTextField: View {
     @State var placeholderText = ""
     @Binding var textFieldText: String
     var textFieldStyle: TextFieldStyle
-    @State var errorMessage = ""
+    @Binding var errorMessage: String
     
     var body: some View {
         VStack {
@@ -31,6 +31,7 @@ struct PrimaryTextField: View {
                 } else {
                     TextField(placeholderText, text: $textFieldText)
                         .keyboardType(keyboardType(for: textFieldStyle))
+                        .textInputAutocapitalization(.never)
                 }
             }
             .padding(EdgeInsets(top: 0, leading: 6, bottom: 0, trailing: 6))
@@ -38,13 +39,16 @@ struct PrimaryTextField: View {
             .frame(height: 55)
             .border(Col.secondaryColor.swiftUIColor, width: 1)
             
-            HStack {
-                Text(errorMessage)
-                    .padding(.vertical, 5)
-                    .fontWeight(.bold)
-                    .foregroundStyle(.red)
-                
-                Spacer()
+            if errorMessage != "" {
+                HStack {
+                    Text(errorMessage)
+                        .padding(.vertical, 5)
+                        .fontWeight(.semibold)
+                        .font(.subheadline)
+                        .foregroundStyle(.red)
+                    
+                    Spacer()
+                }
             }
         }
     }
